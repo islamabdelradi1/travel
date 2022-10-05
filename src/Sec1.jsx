@@ -113,9 +113,10 @@ function Sec1() {
                         <div className='h-[227px] overflow-hidden rounded-tl-xl rounded-tr-xl'>
                         {item ? (
                         <img
-                        style={{ width: '100%' , height: '100%'  }}
+                        style={{ width: '100%'   }}
                         alt={item.title}
                         src={item.img}
+                        className='rounded-tl-xl rounded-tr-xl h-[100%] hover:scale-125 transition  ease-in-out duration-500'
                         />
                     ) : (
                         <Skeleton variant="rectangular" width='100%'  height='100%' />
