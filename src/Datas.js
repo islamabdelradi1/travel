@@ -42,7 +42,7 @@ const dataa=[
 },{
     id:"6",
     title:"Cinque",
-    img:"imgs/pexels-photo-1796736.jpeg",
+    img:"imgs/pexels-photo-1271619.jpeg",
     text:"The vibrant hues of the houses are its benchmark and explain the beauty of this place. Also, if you are a foodie and love seafood, you will be exhilarated with the choice you are about to get here. Hoppy exploring great food!",
     country:"Italy",   
     price:"840"
