@@ -10,7 +10,7 @@ const dataa=[
 },{
     id:"2",
     title:"Machu Picchu",
-    img:"imgs//pexels-photo-1796736.jpeg",
+    img:"imgs/pexels-photo-1796736.jpeg",
     text:"Huayna Picchu is a mountain in Peru, rising over Machu Picchu, the so-called Lost City of tncas. This ploce is popular among tourists as the sunrise from the Sun Gate is simply spectacular",
     country:"Peru",
     price:"500"
