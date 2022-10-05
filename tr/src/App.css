@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+}
+.seco video{
+    height: 900px;
+}
+.seco video{
+    width: 100%;
+    object-fit: fill;
+}
+
+.seco::before{
+    content: " ";
+    background-color: rgba(5, 49, 78, 0.226);
+    width: 100%;
+    height: 900px;
+    position: absolute;
+}
+.secofooter::before{
+    content: " ";
+    background-color: rgba(5, 49, 78, 0.226);
+    width: 100%;
+    height: 600px;
+    position: absolute;
+}
+.btns{
+    background-image: linear-gradient(90deg, rgba(14,162,183,1) 0%, rgba(11,121,168,1) 77%);
+}
+.range{
+    accent-color: #666666;
+}
+.footer{
+    height: 600px;
+
+}
+.footer video{
+    height: 600px;
+}
+.footer video{
+    width: 100%;
+    object-fit: fill;
+}
