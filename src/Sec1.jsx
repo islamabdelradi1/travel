@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { AiOutlineFacebook,AiOutlineInstagram,AiOutlineYoutube,AiOutlineMenuUnfold,AiOutlineDeploymentUnit } from "react-icons/ai";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Skeleton from '@mui/material/Skeleton';
@@ -110,21 +111,49 @@ function Sec1() {
             <div key={index}>
                         <Card className='mr-3 rounded-tl-xl rounded-tr-xl my-2 h-[500px]'>
                         <div className='h-[227px] overflow-hidden rounded-tl-xl rounded-tr-xl'>
-                        <Card.Img variant="top" className='rounded-tl-xl rounded-tr-xl h-[100%] hover:scale-125 transition  ease-in-out duration-500' src={item.img} />
+                        {item ? (
+                        <img
+                        style={{ width: '100%' , height: '100%'  }}
+                        alt={item.title}
+                        src={item.img}
+                        />
+                    ) : (
+                        <Skeleton variant="rectangular" width='100%'  height='100%' />
+                    )}
+                        {/* <Card.Img variant="top" className='rounded-tl-xl rounded-tr-xl h-[100%] hover:scale-125 transition  ease-in-out duration-500' src={item.img} /> */}
                         </div>
 
                     <Card.Body className=' hover:bg-slate-100'>
-                        <Card.Title>{ item.title }</Card.Title>
+                        {item? (
+                        <Card.Title>{ item.title }</Card.Title> 
+
+                        ):(
+                            <Skeleton width="100%" />
+                        )
+                    }
+                        
+                        {item? (
                         <Card.Subtitle className="mb-2 text-muted text-[13px]">{ item.country}</Card.Subtitle>
+
+                        ):(
+                            <Skeleton width="100%" />
+                        )
+                    }
                         <hr />
                         <div className='flex justify-between px-3'>
                             <p>CULTURAL <br /> RELAX</p>
                             <h1 className=' font-bold text-2xl text-slate-700'>${item.price}</h1>
                         </div>
                         <hr />
+                        {item? (
                         <Card.Text className=' text-[14px] text-slate-500'>
                         {item.text }
                         </Card.Text>
+                        ):(
+                            <Skeleton width="100%" />
+                        )
+                    }
+
                         <Link to={`/Viwez/${item.id}`}>
                             <Button variant="primary " className='btns border-none rounded-full  text-[14px] px-10 text-white py-2 my-2  '>DETAILS</Button>
                         </Link>
